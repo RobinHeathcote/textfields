@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet var textField2: UITextField!
     @IBOutlet var textField3: UITextField!
     
+    let zipcodeDelegate = ZipcodeTextFieldDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.textField1.delegate = zipcodeDelegate
     }
-
 }
 
